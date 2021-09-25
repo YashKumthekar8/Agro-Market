@@ -1,0 +1,41 @@
+
+Project Related Stuff:
+
+https://www.geeksforgeeks.org/python-relational-fields-in-django-models/
+
+User Info
+
+1) Load Plants i.e. images and name for cards. Also based on selected card load plant info.
+	db.selling_app_plant.find({'name': __ })
+
+2) Load respective sellers
+	db.selling_app_plant_seller.find({'id': __ }, {seller_id:1, _id:0})
+	
+1) Load Feritilizers i.e. images and name for cards. Also based on selected card load fertilizer info.
+	db.selling_app_fertilizer.find({'name': __ })
+
+2) Load respective sellers
+	db.selling_app_fertilizer_seller.find({'id': __ }, {seller_id:1, _id:0})
+	
+	
+3) Select plants/fertilizers based on location
+	db.selling_app_plant.find({'location_id': __ })
+	
+4) Select location based on plant/fertilizers
+	id = db.selling_app_plant.find({'id': __ }, {location_id:1, _id:0})
+	db.selling_app_location.find({'id', id })
+	
+
+Admin Page
+
+5) Add Seller
+6) Delete Seller
+7) Update Seller
+
+8) Add Plant/Feritilizers
+9) Delete Plant/Feritilizers
+10) Update Plant/Feritilizers
+
+11) Add Location
+12) Delete Location
+13) Update Location
