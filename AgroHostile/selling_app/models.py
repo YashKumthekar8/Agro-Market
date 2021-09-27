@@ -24,6 +24,8 @@ class Plant(models.Model):
     spacing = models.CharField(max_length=10)
     color = models.CharField(max_length=10)
     season = models.CharField(max_length=40)
+    size = models.CharField(max_length=15, default=None)
+    light_required = models.CharField(max_length=40, default=None)
     soil_requirements = models.CharField(max_length=50)
     growth_rate = models.CharField(max_length=40)
     location = models.ForeignKey(Location, default=None, on_delete=models.CASCADE)
