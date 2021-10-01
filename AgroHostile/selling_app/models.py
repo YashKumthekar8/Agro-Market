@@ -6,6 +6,7 @@ class Seller(models.Model):
     name = models.CharField(max_length=30)
     phone = models.IntegerField()
     address = models.CharField(max_length=150, default=None)
+    residence_city = models.CharField(max_length=30, default=None)
 
     def __str__(self):
         return self.name
@@ -28,7 +29,7 @@ class Plant(models.Model):
     light_required = models.CharField(max_length=40, default=None)
     soil_requirements = models.CharField(max_length=50)
     growth_rate = models.CharField(max_length=40)
-    location = models.ForeignKey(Location, default=None, on_delete=models.CASCADE)
+    location = models.ManyToManyField(Location, default=None)
     seller = models.ManyToManyField(Seller, default=None)
 
 

@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'Plants',
         'CLIENT': {
-            'host': 'mongodb+srv://yash:yash@cluster0.k8gky.mongodb.net/Plants?retryWrites=true&w=majority'
+            'host': 'mongodb+srv://yash:yash@cluster0.k8gky.mongodb.net/Plants?retryWrites=true&w=majority&ssl=true&ssl_cert_reqs=CERT_NONE'
         },   
     }
 }
