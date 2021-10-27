@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Select Type of Plant You Want to Find">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Fertilizers</title>
+    <link rel="stylesheet" href="{% static 'nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'Fertilizers.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.26.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "AgroMarket",
+            "logo": "images/AgroMarketLogo1.jpg"
+        }
+    </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Fertilizers">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="u-body u-overlap u-overlap-transparent">
+    <header class="u-clearfix u-gradient u-header u-sticky u-header" id="sec-7e18" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <nav class="u-align-right u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                    <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-text-shadow u-custom-text-shadow-blur u-custom-text-shadow-color u-custom-text-shadow-transparency u-custom-text-shadow-x u-custom-text-shadow-y u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#">
+                        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                        <li class="u-nav-item"><a class="u-border-1 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'plants' %}"
+                                style="padding: 20px 6px;">Plants</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-border-1 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'fertilizers' %}"
+                                style="padding: 20px 6px;">Fertilizers</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-border-1 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'logout' %}"
+                                style="padding: 20px 6px;">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'plants' %}" style="padding: 20px 6px;">Plants</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'fertilizers' %}" style="padding: 20px 6px;">Fertilizers</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'logout' %}" style="padding: 20px 6px;">Log Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+            <a href="{% url 'plants' %}" class="u-image u-logo u-image-1" data-image-width="1398" data-image-height="1022">
+                <img src="{% static 'images/AgroMarketLogo1.jpg' %}" class="u-logo-image u-logo-image-1">
+            </a>
+        </div>
+    </header>
+    <section class="u-align-right u-clearfix u-image u-section-1" id="sec-c8f2" data-image-width="1280" data-image-height="851">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-center u-container-style u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <h3 class="u-text u-text-body-alt-color u-text-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">AGROMARKET</h3>
+                </div>
+            </div>
+             
+            <div class="u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                {% for i in  fertilizer %}
+   
+                    <div class="u-align-center u-border-7 u-border-palette-5-dark-1 u-container-style u-image u-list-item u-radius-50 u-repeater-item u-shape-round u-video-cover u-image-1" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="0"
+                        data-animation-direction="" data-image-width="2000" data-image-height="1333"
+                        
+                        >
+                       
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2" style="display:block;height:80vh">
+                        
+                            {% comment %} <img src="/static/images/{{i.name}}.jpg" style="width:100%;height:50%;border-radius:15px;margin-top:0%;"> {% endcomment %}
+                             <img src="/static/images/{{i.name}}.jpg" style="width:100%;height:30vh;border-radius:15px;margin-top:0%;">
+
+                            <p style="font-size:200%;"><b>{{i.name}}</b></p>
+
+                            <a href="/Fertilizers-Name.html/{{i.name}}/" data-page-id="1561115757" class="u-active-palette-4-light-1 u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-1" style="margin-top:0;">learn more</a>
+                        </div>
+                        
+                    </div>
+            {%endfor%}
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e91d">
+        <div class="u-align-left u-clearfix u-sheet u-sheet-1"></div>
+    </footer><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base u-spacing-15" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+    </span>
+</body>
+
+</html>

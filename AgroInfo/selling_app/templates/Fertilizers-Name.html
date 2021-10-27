@@ -1,0 +1,415 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Select Type of Plant You Want to Find">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Fertilizers Name</title>
+    <link rel="stylesheet" href="{% static 'nicepage.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'Fertilizers-Name.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'nicepage.js' %}" defer=""></script>
+    <meta name="generator" content="Nicepage 3.26.0, nicepage.com">
+
+
+
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+    <style>
+        #map {
+            height: 400px;
+            width: 90%;
+            margin-left: 5%;
+        }
+    </style>
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "AgroMarket",
+            "logo": "images/AgroMarketLogo1.jpg"
+        }
+    </script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Fertilizers Name">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="u-body u-overlap u-overlap-transparent">
+    <header class="u-clearfix u-gradient u-header u-sticky u-header" id="sec-7e18" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <nav class="u-align-right u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                <div class="menu-collapse" style="font-size: 1.25rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
+                    <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-border-radius u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-text-shadow u-custom-text-shadow-blur u-custom-text-shadow-color u-custom-text-shadow-transparency u-custom-text-shadow-x u-custom-text-shadow-y u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+                        href="#">
+                        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+                    </a>
+                </div>
+                <div class="u-custom-menu u-nav-container">
+                    <ul class="u-nav u-spacing-30 u-unstyled u-nav-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                        <li class="u-nav-item"><a class="u-border-1 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'plants' %}"
+                                style="padding: 20px 6px;">Plants</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-border-1 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'fertilizers' %}"
+                                style="padding: 20px 6px;">Fertilizers</a>
+                        </li>
+                        <li class="u-nav-item"><a class="u-border-1 u-border-active-grey-90 u-border-hover-grey-50 u-border-no-left u-border-no-right u-border-no-top u-button-style u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90" href="{% url 'logout' %}"
+                                style="padding: 20px 6px;">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="u-custom-menu u-nav-container-collapse">
+                    <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                        <div class="u-inner-container-layout u-sidenav-overflow">
+                            <div class="u-menu-close"></div>
+                            <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'plants' %}" style="padding: 20px 6px;">Plants</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'fertilizers' %}" style="padding: 20px 6px;">Fertilizers</a>
+                                </li>
+                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'logout' %}" style="padding: 20px 6px;">Log Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                </div>
+            </nav>
+            <a href="{% url 'plants' %}" class="u-image u-logo u-image-1" data-image-width="1398" data-image-height="1022">
+                <img src="{% static 'images/AgroMarketLogo1.jpg' %}" class="u-logo-image u-logo-image-1">
+            </a>
+        </div>
+    </header>
+    <section class="u-align-right u-clearfix u-image u-section-1" id="sec-6f04" data-image-width="1280" data-image-height="851">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-center u-container-style u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <h3 class="u-text u-text-body-alt-color u-text-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">AGROMARKET</h3>
+                </div>
+            </div>
+            <div class="u-list u-list-1">
+                <div class="u-repeater u-repeater-1">
+                 {% for i in  Allfertizlizer %}
+                    <div class="u-align-center u-border-7 u-border-palette-5-dark-1 u-container-style u-image u-list-item u-radius-50 u-repeater-item u-shape-round u-video-cover u-image-1" data-animation-name="zoomIn" data-animation-duration="1000" data-animation-delay="0"
+                        data-animation-direction="" data-image-width="2000" data-image-height="1333">
+                        <div class="u-container-layout u-similar-container u-valign-bottom u-container-layout-2">
+                              {% comment %} <img src="/static/images/{{i.name}}.jpg" style="width:100%;height:50%;border-radius:15px;margin-top:0%;"> {% endcomment %}
+                             <img src="/static/images/{{i.name}}.jpg" style="width:100%;height:50%;border-radius:15px;margin-top:0%;">
+                             
+                            <h1>{{i.name}}</h1>
+
+                            <a href="/Fertilizers-Name.html/{{i.name}}/" data-page-id="1561115757" class="u-active-palette-4-light-1 u-btn u-btn-round u-button-style u-hover-palette-4-base u-palette-3-base u-radius-50 u-btn-1">learn more</a>
+                        </div>
+                    </div>
+                  {%endfor%}  
+            </div>
+        </div>
+    </section>
+
+    <section class="u-clearfix u-gradient u-section-2" id="sec-b002">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <!--product-->
+            <!--product_options_json-->
+            <!--{"source":""}-->
+            <!--/product_options_json-->
+            <!--product_item-->
+            <div class="u-container-style u-expanded-width u-product u-product-1">
+                <div class="u-container-layout u-container-layout-1">
+                    <!--product_image-->
+                    <img alt="" class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-image u-image-round u-product-control u-radius-50 u-image-1" data-image-width="2000" data-image-height="1333" src="/static/images/{{fer.name}}.jpg" data-animation-name="fadeIn" data-animation-duration="1000"
+                        data-animation-delay="0" data-animation-direction="">
+                    <!--/product_image-->
+                    <h3 class="u-align-center u-text u-text-body-alt-color u-text-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">{{fer.name}}</h3>
+                    <div class="u-table u-table-responsive u-table-1">
+                        <table class="u-table-entity">
+                            <colgroup>
+                                <col width="25.66%">
+                                <col width="74.34%">
+                            </colgroup>
+                            <tbody class="u-table-alt-grey-25 u-table-body u-table-body-1">
+                                <tr style="height: 75px;">
+                                    <td class="u-border-2 u-border-grey-30 u-first-column u-grey-50 u-table-cell u-table-cell-1">Weight</td>
+                                    <td class="u-border-2 u-border-grey-30 u-table-cell u-table-cell-2">{{fer.weight}}</td>
+                                </tr>
+                                <tr style="height: 76px;">
+                                    <td class="u-border-2 u-border-grey-30 u-first-column u-grey-50 u-table-cell u-table-cell-3"> Method to Use</td>
+                                    <td class="u-border-2 u-border-grey-30 u-table-cell u-table-cell-4">{{fer.method_to_use}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="u-container-style u-expanded-width u-group u-palette-4-dark-2 u-group-1" data-animation-name="flipIn" data-animation-duration="1000" data-animation-delay="1000" data-animation-direction="X">
+                        <div class="u-container-layout u-valign-bottom u-container-layout-2">
+                            <h2 class="u-align-left u-text u-text-2">Det<span style="text-decoration: underline !important;"></span>ails
+                            </h2>
+                            <p class="u-align-justify u-text u-text-3" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">{{fer.description}}&nbsp;</p>
+                            <h2 class="u-align-left u-text u-text-4"> SELLERS</h2>
+                            <p class="u-align-justify u-text u-text-5"> To find the right model for you, first choose the car you're interested in. <br>Then select up to three models to review and easily compare their features.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/product_item-->
+            <!--/product-->
+        </div>
+    </section>
+    <section class="u-carousel u-slide u-block-092b-1" id="carousel_0985" data-interval="5000" data-u-ride="carousel">
+        <ol class="u-absolute-hcenter u-carousel-indicators u-block-092b-2">
+            <li data-u-target="#carousel_0985" class="u-active u-grey-30" data-u-slide-to="0"></li>
+            <li data-u-target="#carousel_0985" class="u-grey-30" data-u-slide-to="1"></li>
+            <li data-u-target="#carousel_0985" class="u-grey-30" data-u-slide-to="2"></li>
+        </ol>
+        <div class="u-carousel-inner" role="listbox">
+        {%if len >= 1 %}
+            <div class="u-active u-align-center u-carousel-item u-clearfix u-image u-section-3-1">
+                <div class="u-clearfix u-sheet u-sheet-1">
+                    <div class="u-black u-container-style u-group u-opacity u-opacity-40 u-group-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <h1 class="u-align-center u-text u-text-default u-title u-text-1"><b>{{seller.0.name}}</b>
+                            </h1>
+                            <div class="u-table u-table-responsive u-table-1">
+                                <table class="u-table-entity">
+                                    <colgroup>
+                                        <col width="23.6%">
+                                        <col width="76.4%">
+                                    </colgroup>
+                                    <tbody class="u-table-body u-table-body-1">
+                                        <tr style="height: 64px;">
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">Address</td>
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{seller.0.address}}</td>
+                                        </tr>
+                                        <tr style="height: 65px;">
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">Contact No.</td>
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{seller.0.phone}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a onclick="map_individual()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endif%}
+            {% if len >= 2 %}
+            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-3-2">
+                <div class="u-clearfix u-sheet u-sheet-1">
+                    <div class="u-black u-container-style u-group u-opacity u-opacity-40 u-group-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <h1 class="u-align-center u-text u-text-default u-title u-text-1"><b>{{seller.1.name}}</b>
+                            </h1>
+                            <div class="u-table u-table-responsive u-table-1">
+                                <table class="u-table-entity">
+                                    <colgroup>
+                                        <col width="23.6%">
+                                        <col width="76.4%">
+                                    </colgroup>
+                                    <tbody class="u-table-body u-table-body-1">
+                                        <tr style="height: 64px;">
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">Address</td>
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{seller.1.address}}</td>
+                                        </tr>
+                                        <tr style="height: 65px;">
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">Contact No.</td>
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{seller.1.phone}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a onclick="map_individual()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endif%}
+            {% if len >= 3 %}
+            <div class="u-align-center u-carousel-item u-clearfix u-image u-section-3-3">
+                <div class="u-clearfix u-sheet u-sheet-1">
+                    <div class="u-black u-container-style u-group u-opacity u-opacity-40 u-group-1">
+                        <div class="u-container-layout u-container-layout-1">
+                            <h1 class="u-align-center u-text u-text-default u-title u-text-1"><b>{{seller.2.name}}</b>
+                            </h1>
+                            <div class="u-table u-table-responsive u-table-1">
+                                <table class="u-table-entity">
+                                    <colgroup>
+                                        <col width="23.6%">
+                                        <col width="76.4%">
+                                    </colgroup>
+                                    <tbody class="u-table-body u-table-body-1">
+                                        <tr style="height: 64px;">
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">Address</td>
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{seller.2.address}}</td>
+                                        </tr>
+                                        <tr style="height: 65px;">
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">Contact No.</td>
+                                            <td class="u-border-1 u-border-grey-30 u-table-cell">{{seller.2.phone}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a onclick="map_individual()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%endif%}
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-text-grey-30 u-block-092b-5" href="#carousel_0985" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
+        </span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-text-grey-30 u-block-092b-4" href="#carousel_0985" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
+        </span>
+            <span class="sr-only">Next</span>
+        </a>
+    </section>
+    <section class="u-clearfix u-gradient u-section-4" id="sec-4119">
+        <div class="u-align-left u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <h2 class="u-text u-text-default u-text-1">To Find More Sellers On Map&nbsp;</h2>
+            <a onclick="maps()" class="u-btn u-button-style u-btn-1">Click Here</a>
+        </div>
+
+        <div id='mapping'></div>
+        <script>
+            function map_individual() {
+                document.getElementById('mapping').innerHTML = '<div id="mapping" style="margin-left: 5%;">' +
+                    '<iframe src={{ link }} width=95% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> ' +
+                    '</div>'
+            }
+        </script>
+
+
+        <script>
+
+    window.scrollTo({
+        top: 1800,
+        behavior: 'smooth'
+    });
+            function maps() {
+                document.getElementById('mapping').innerHTML = '<div id="map"></div>';
+                initMap()
+            }
+        </script>
+        <script>
+            function initMap() {
+                // Map options
+                var options = {
+                    zoom: 11,
+                    center: {
+                        lat: 19.07283,
+                        lng: 72.88261
+                    }
+                }
+
+                // New map
+                var map = new google.maps.Map(document.getElementById('map'), options);
+
+                // Listen for click on map
+                /*
+                // Add marker
+                var marker = new google.maps.Marker({
+                  position:{lat:42.4668,lng:-70.9495},
+                  map:map,
+                  icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                });
+          
+               
+          
+                marker.addListener('click', function(){
+                  infoWindow.open(map, marker);
+                });
+                */
+                var infoWindow = new google.maps.InfoWindow({
+                    content: '<h1>Lynn MA</h1>'
+                });
+                // Array of markers
+                var markers = [{
+                    coords: {
+                        lat: 18.938842639074686,
+                        lng: 72.82605367568458
+                    },
+                    // iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                    content: '<h1>Wankhede Stadium</h1>'
+                }, {
+                    coords: {
+                        lat: 18.929681,
+                        lng: 72.833589
+                    },
+                    content: '<h1>Bombay Stock Exchange</h1>'
+                }, {
+                    coords: {
+                        lat: 19.1335144659,
+                        lng: 72.9092113631
+                    },
+                    content: '<h5>Indian Institute Of Technology Bombay</h5><p>Main Gate Rd, IIT Area, Powai, Mumbai, Maharashtra 400076</p><p>Phone No: 98691231</p>'
+                }];
+
+                // Loop through markers
+                for (var i = 0; i < markers.length; i++) {
+                    // Add marker
+                    addMarker(markers[i]);
+                }
+
+                // Add Marker Function
+                function addMarker(props) {
+                    var marker = new google.maps.Marker({
+                        position: props.coords,
+                        map: map,
+                        //icon:props.iconImage
+                    });
+
+                    // Check for customicon
+                    if (props.iconImage) {
+                        // Set icon image
+                        marker.setIcon(props.iconImage);
+                    }
+
+                    // Check content
+                    if (props.content) {
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: props.content
+                        });
+
+                        marker.addListener('click', function() {
+                            infoWindow.open(map, marker);
+                        });
+                    }
+                }
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJbFhi7YE_Hw6_VU9MbIbZMBMdtdtls_I&callback=initMap"></script>
+        >
+        </script>
+    </section>
+
+
+
+
+
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e91d">
+        <div class="u-align-left u-clearfix u-sheet u-sheet-1"></div>
+    </footer><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base u-spacing-15" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
+    </span>
+</body>
+
+</html>
