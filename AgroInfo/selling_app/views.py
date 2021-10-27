@@ -44,7 +44,17 @@ individual_sellers_link = {
     'Mahajan Florist': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.3027974448783!2d79.05839515050488!3d21.140344785869054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c060e185233d%3A0x8fb1386f9d98a788!2sMahajan%20Florist!5e0!3m2!1sen!2sin!4v1634470447305!5m2!1sen!2sin",
     'RAJ flower shop': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.1321596006983!2d73.65486475045417!3d17.925988787697907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2651d898053e1%3A0x609449369d4f5adf!2sRAJ%20flower%20shop!5e0!3m2!1sen!2sin!4v1634470526670!5m2!1sen!2sin",
     "Shamun's Flowers": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.400090235845!2d73.87669565046279!3d18.510813687352893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c048ea9ed0b3%3A0xfd9226c41421369b!2sShamun&#39;s%20Flowers!5e0!3m2!1sen!2sin!4v1634470562266!5m2!1sen!2sin",
-    'Florist': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.04131007348!2d73.83632702145815!3d18.527035262153834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf78d0798b11%3A0xaad19fa97f8bd6df!2sFlorist!5e0!3m2!1sen!2sin!4v1634470609180!5m2!1sen!2sin"
+    'Florist': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.04131007348!2d73.83632702145815!3d18.527035262153834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf78d0798b11%3A0xaad19fa97f8bd6df!2sFlorist!5e0!3m2!1sen!2sin!4v1634470609180!5m2!1sen!2sin",
+
+    'Dynamic Lifter Organic Fertilizer Pvt Ltd':"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241463.4242094627!2d72.68665201640627!3d18.981524300000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6746b91f33%3A0x543c59f178c8cf90!2sDynamic%20Lifter%20Organic%20Fertilizer%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1634887405010!5m2!1sen!2sin",
+    'Bio Agro Ferticons':"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242070.14635179378!2d73.68124561640622!3d18.558431800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf6995555555%3A0x5680082fa1859d7!2sBio%20Agro%20Ferticons!5e0!3m2!1sen!2sin!4v1634887543556!5m2!1sen!2sin",
+    'Maharashtra Chemicals and Fertilisers': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1934014.132633578!2d73.55205769850868!3d18.781596878864903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c065a7c56561%3A0x6430b813481328c7!2sMaharashtra%20Chemicals%20and%20Fertilisers!5e0!3m2!1sen!2sin!4v1634888069673!5m2!1sen!2sin",
+    'Dhananjay Fertilizers': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1934724.6015850147!2d72.54452277231398!3d18.719605391582306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e49a95274ce9%3A0x781ed3cd8f44ac91!2sDhananjay%20Fertilizers!5e0!3m2!1sen!2sin!4v1634888263372!5m2!1sen!2sin",
+    'GreenTouch Organic Fertilizers': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1934724.6015850147!2d72.54452277231398!3d18.719605391582306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a98a835ddb77%3A0x4ea77eb907ddc57!2sGreenTouch%20Organic%20Fertilizers!5e0!3m2!1sen!2sin!4v1634888592742!5m2!1sen!2sin",
+    'Shri Balaji Agro Service': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120548.0279758669!2d73.11539345457903!3d19.23334519143052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79710ac289591%3A0xbe79da41a1f1d84!2sShri%20Balaji%20Agro%20Service!5e0!3m2!1sen!2sin!4v1634892282547!5m2!1sen!2sin",
+    'JOSHI AGRO': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120598.84723888698!2d72.77682785820312!3d19.16399350000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b652159f26e5%3A0xd2077a7b3b9a4ec9!2sJOSHI%20AGRO!5e0!3m2!1sen!2sin!4v1634892358011!5m2!1sen!2sin",
+    'Vanita Agrochem (I) Pvt. Ltd (Mumbai)': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120676.7916067663!2d72.93336095820311!3d19.057153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c183af737f3d%3A0xe4450fc26bd6d706!2sVanita%20Agrochem%20(I)%20Pvt.%20Ltd%20(Mumbai)!5e0!3m2!1sen!2sin!4v1634892521091!5m2!1sen!2sin"
+
 }
 
 
@@ -93,7 +103,17 @@ individual_sellers = {
     'Mahajan Florist': [21.4324634, 79.5605047],
     'RAJ flower shop': [17.9259888,	73.6548648],
     "Shamun's Flowers": [18.5108137, 73.318587],
-    'Florist': [18.5108137,	74.318587]
+    'Florist': [18.5108137,	74.318587],
+
+    'Dynamic Lifter Organic Fertilizer Pvt Ltd': [18.99842, 72.81738],
+    'Bio Agro Ferticons': [18.55747, 73.809029],
+    'Maharashtra Chemicals and Fertilisers': [18.258643622596416, 74.51651782227995],
+    'Dhananjay Fertilizers': [18.99965, 73.12633],
+    'GreenTouch Organic Fertilizers': [19.444293, 72.892823],
+    'Shri Balaji Agro Service': [19.307228, 73.152262],
+    'JOSHI AGRO': [19.164013, 72.846859],
+    'Vanita Agrochem (I) Pvt. Ltd (Mumbai)': [19.057, 73.003537],
+
 }
 
 
@@ -125,7 +145,15 @@ sellers_products_based = {
     'Tulip': {1: "Shamun's Flowers", 2: 'Ambika Florist'},
     'Sunflower': {1: 'Flower Link', 2: 'Mahalaxmi Nursery Harchiri'},
     'Daffodil': {1: 'Dandvate Flowers', 2: 'Mahajan Florist'},
-    'Lili': {1: 'Ferns N Petals', 2: 'Riya Flowers', 3: 'RAJ flower shop'}
+    'Lili': {1: 'Ferns N Petals', 2: 'Riya Flowers', 3: 'RAJ flower shop'},
+
+    'Bio fertilizer': {1: 'Dynamic Lifter Organic Fertilizer Pvt Ltd', 2: 'Bio Agro Ferticons'},
+    'Dr. Earth Premium Fertilizer': {1: 'Maharashtra Chemicals and Fertilisers'},
+    'Jobe’s Spike Fruit feritlizer': {1: 'Maharashtra Chemicals and Fertilisers', 2: 'Vanita Agrochem (I) Pvt. Ltd (Mumbai)'},
+    'Espoma Citrus-Tone 5-2-6': {1: 'Dhananjay Fertilizers', 2: 'GreenTouch Organic Fertilizers'},
+    'Purely Plant Food Vegetable': {1: 'Dynamic Lifter Organic Fertilizer Pvt Ltd', 2: 'Shri Balaji Agro Service', 3: 'JOSHI AGRO'},
+    'Blue Ribbon Organic fertilizer': {1: 'Maharashtra Chemicals and Fertilisers', 2: 'Shri Balaji Agro Service', 3: 'JOSHI AGRO'},
+
 }
 
 sellers_city_based = {	 	
@@ -214,11 +242,37 @@ def fertilizers_name(request,val):
     fer=Fertilizer.objects.filter(name=val)
     seller=fer[0].seller.all()
 
-    context = {'link': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30155.296665082962!2d72.90283516450356!3d19.13343094957238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7f189efc039%3A0x68fdcea4c5c5894e!2sIndian%20Institute%20of%20Technology%20Bombay!5e0!3m2!1sen!2sin!4v1633747503376!5m2!1sen!2sin",
+    links = []
+    if len(seller) < 3:
+        for i in range(0, len(seller)):
+            # print(sellers[i].name)
+            links.append(individual_sellers_link[seller[i].name])
+    else:
+        for i in range(0, 3):
+            # print(sellers[i].name)
+            links.append(individual_sellers_link[seller[i].name])
+
+    values = sellers_products_based[val]
+    # print(values[1])
+    coordinate = []
+    for i in values:
+        key = values[i]
+        coordinate.append(individual_sellers[key])
+    
+    content = {}
+    for i in range(0, len(seller)):
+        content[i] = f'''<h5>{seller[i].name}</h5>
+                    <p>Address: {seller[i].address}</p><p>Phone No: {seller[i].phone}</p>'''
+
+
+    context = {
+    'link': links,
     'len':len(seller),
     'seller':seller,
     'Allfertizlizer':Allfertizlizer,
-    'fer':fer[0] 
+    'fer':fer[0],
+    'coordinates': coordinate,
+    'content': content,
     }
 
     return render(request, 'Fertilizers-Name.html',context)
@@ -332,7 +386,7 @@ def flower_name(request,val):
             add=User(id=length+1,username=str(request.user),plant=plant[0])
             add.save()
         else:
-            User.objects.get(id=users[0].id).delete()
+            User.objects.filter(id=users[0].id)[0].delete()
             plant=Plant.objects.filter(name=val,Type='Flower')
             add=User(id=users[0].id,username=str(request.user),plant=plant[0])
             add.save()
@@ -488,7 +542,7 @@ def fruit_name(request,val):
             add=User(id=length+1,username=str(request.user),plant=plant[0])
             add.save()
         else:
-            User.objects.get(id=users[0].id).delete()
+            User.objects.filter(id=users[0].id)[0].delete()
             plant=Plant.objects.filter(name=val,Type='Fruit')
             add=User(id=users[0].id,username=str(request.user),plant=plant[0])
             add.save()
@@ -579,7 +633,7 @@ def vegetable_name(request,val):
             add=User(id=length+1,username=str(request.user),plant=plant[0])
             add.save()
         else:
-            User.objects.get(id=users[0].id).delete()
+            User.objects.filter(id=users[0].id)[0].delete()
             plant=Plant.objects.filter(name=val,Type='Vegetable')
             add=User(id=users[0].id,username=str(request.user),plant=plant[0])
             add.save()

@@ -299,69 +299,76 @@
 
         <script>
 
-    window.scrollTo({
-        top: 1800,
-        behavior: 'smooth'
-    });
             function maps() {
                 document.getElementById('mapping').innerHTML = '<div id="map"></div>';
                 initMap()
+                window.scrollTo({
+                    top: 1800,
+                    behavior: 'smooth'
+                });
             }
+    
         </script>
         <script>
+            
             function initMap() {
                 // Map options
+                
+                var coordinate = {{coordinates}};
+                
                 var options = {
-                    zoom: 11,
+                    zoom: 5,
                     center: {
-                        lat: 19.07283,
-                        lng: 72.88261
+                        lat: coordinate[0][0],
+                        lng: coordinate[0][1]
                     }
                 }
 
                 // New map
                 var map = new google.maps.Map(document.getElementById('map'), options);
 
-                // Listen for click on map
-                /*
-                // Add marker
-                var marker = new google.maps.Marker({
-                  position:{lat:42.4668,lng:-70.9495},
-                  map:map,
-                  icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
-                });
-          
-               
-          
-                marker.addListener('click', function(){
-                  infoWindow.open(map, marker);
-                });
-                */
+
                 var infoWindow = new google.maps.InfoWindow({
                     content: '<h1>Lynn MA</h1>'
                 });
-                // Array of markers
-                var markers = [{
-                    coords: {
-                        lat: 18.938842639074686,
-                        lng: 72.82605367568458
-                    },
-                    // iconImage: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                    content: '<h1>Wankhede Stadium</h1>'
-                }, {
-                    coords: {
-                        lat: 18.929681,
-                        lng: 72.833589
-                    },
-                    content: '<h1>Bombay Stock Exchange</h1>'
-                }, {
-                    coords: {
-                        lat: 19.1335144659,
-                        lng: 72.9092113631
-                    },
-                    content: '<h5>Indian Institute Of Technology Bombay</h5><p>Main Gate Rd, IIT Area, Powai, Mumbai, Maharashtra 400076</p><p>Phone No: 98691231</p>'
-                }];
 
+                var markers = [];
+                contet = [];
+                {% for j in content.items %}
+                    value = {{j | safe}}
+                    contet.push(value)
+                {% endfor %}
+ 
+                var k = 0;
+                for(i=0; i<coordinate.length; i++) {
+                    lat=coordinate[i][0]
+                    lng=coordinate[i][1]
+                    coord={
+                    content:contet[k],
+                    coords:{
+                    'lat':lat,
+                    'lng':lng
+                    }
+                }
+                    markers.push(coord)
+                    k = k + 1;
+            }  
+{% comment %} 
+            {% for i in coordinates %}
+                    coord={
+                    content:{{i.2 |safe}},
+                    coords:{
+                    'lat':{{i.0}},
+                    'lng':{{i.1}}
+                    }
+                }
+                    markers.push(coord)
+            
+            {%enfor%}
+
+             {% endcomment %}
+                
+                console.log(markers)
                 // Loop through markers
                 for (var i = 0; i < markers.length; i++) {
                     // Add marker
@@ -394,6 +401,7 @@
                     }
                 }
             }
+
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJbFhi7YE_Hw6_VU9MbIbZMBMdtdtls_I&callback=initMap"></script>
         >
