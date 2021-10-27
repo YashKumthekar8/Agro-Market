@@ -4712,9 +4712,10 @@ def frictionlosscalculator(request):
       flow=convert2("flow",flow_op,flow)
       
       #Calculation
-      v1=flow**1.8
-      v2=int(c)**1.8
-      v3=Ia**4.8
+      v1=flow**1.857
+      v2=int(c)**1.857
+      v3=Ia**4.834
+
       
       F=10.67*Ib*v1/(v2*v3)
       base=0
