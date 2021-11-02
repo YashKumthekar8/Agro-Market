@@ -195,7 +195,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a onclick="map_individual()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
+                            <a onclick="map_individual1()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a onclick="map_individual()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
+                            <a onclick="map_individual2()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a onclick="map_individual()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
+                            <a onclick="map_individual3()" class="u-active-none u-border-2 u-border-white u-btn u-btn-rectangle u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1">FOR more dETAILS</a>
                         </div>
                     </div>
                 </div>
@@ -287,9 +287,19 @@
 
         <div id='mapping'></div>
         <script>
-            function map_individual() {
+            function map_individual1() {
                 document.getElementById('mapping').innerHTML = '<div id="mapping" style="margin-left: 5%;">' +
-                    '<iframe src={{ link }} width=95% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> ' +
+                    '<iframe src={{ link.0 }} width=95% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> ' +
+                    '</div>'
+            }
+            function map_individual2() {
+                document.getElementById('mapping').innerHTML = '<div id="mapping" style="margin-left: 5%;">' +
+                    '<iframe src={{ link.1 }} width=95% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> ' +
+                    '</div>'
+            }
+            function map_individual3() {
+                document.getElementById('mapping').innerHTML = '<div id="mapping" style="margin-left: 5%;">' +
+                    '<iframe src={{ link.2 }} width=95% height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> ' +
                     '</div>'
             }
         </script>
